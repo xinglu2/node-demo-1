@@ -25,11 +25,11 @@ var server = http.createServer(function (request, response) {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write(`
-            <link rel="stylesheet" href="./style.css">
+            <link rel="stylesheet" href="./x.css">
             <h1>终于拥有了自己的服务器，好开心哈哈哈~~~\n</h1>
             `)
     response.end()
-  } else if (path === '/x') {
+  } else if (path === './x.css') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`body{color: red;}`)
