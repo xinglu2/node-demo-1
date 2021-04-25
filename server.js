@@ -29,7 +29,7 @@ var server = http.createServer(function (request, response) {
             <h1>终于拥有了自己的服务器，好开心哈哈哈~~~\n</h1>
             `)
     response.end()
-  } else if (path === './x.css') {
+  } else if (path === '/x.css') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`body{color: red;}`)
