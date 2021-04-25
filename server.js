@@ -24,7 +24,10 @@ var server = http.createServer(function (request, response) {
   if (path === '/') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(`二哈`)
+    response.write(`
+            <link rel="stylesheet" href="./style.css">
+            <h1>终于拥有了自己的服务器，好开心哈哈哈~~~</h1>
+            `)
     response.end()
   } else if (path === '/x') {
     response.statusCode = 200
